@@ -1,0 +1,54 @@
+select.form-control:not([size]):not([multiple])
+{
+  height:36px;
+}
+.select2-container {
+  width: 100%!important;
+}
+.select2-validation{
+  border: solid 2px #d75452!important;
+}
+
+/***select box样式修改****/
+.select2-container--default .select2-selection--single {
+  border: solid 2px #E1E8EE;
+  border-radius: 6px;
+  height: 36px;
+  outline: none;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered,
+ .select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 32px;
+  line-height: 32px;
+}
+  /*蓝色边框*/
+.select2-container--default .select2-search--dropdown .select2-search__field {
+  border: solid 2px #3998fc;
+  border-radius: 6px;
+  outline: none;
+}
+  /*多选框*/
+.select2-container--default .select2-selection--multiple,
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+  border: solid 2px #E1E8EE;
+  border-radius: 6px;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  border: none; 
+  background-color: transparent;
+}
+/*修改多选框高度*/
+.select2-container--default .select2-selection--multiple{
+  line-height: 0;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice{
+  margin-top: 0;
+  line-height: 32px;
+}
+.select2-container--default .select2-selection--multiple .select2-search input{
+  line-height: 32px;
+}
+.select2-container .select2-search--inline .select2-search__field{
+  margin-top: 0;
+}
+li.select2-results__option{white-space: nowrap;text-overflow: ellipsis;overflow: hidden}

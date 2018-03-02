@@ -1,0 +1,69 @@
+.modal-open-self {
+  overflow: hidden;
+}
+
+.modal-open-self .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.modal-open-self .modal-header-color {
+	background-color:@Rbui-button-color;
+}
+
+.modal-header
+{
+  height:35px;
+  background-color: @Rbui-Panel-headerbgcolor;
+  padding:0;
+  line-height:35px;
+  display:block;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.modal-header .close
+{
+  line-height: 35px;
+  margin:0;
+  padding:0 10px;
+  color:white;
+  box-shadow: none;
+  outline: none;
+  font-size:1rem;
+}
+
+.modal-header .modal-title
+{
+  font-size: 14px;
+  line-height: 35px;
+  padding:0 15px;
+  color:white;
+}
+
+.modal-dialog .modal-footer > button.btn:first-of-child
+{
+  margin-left:0;
+}
+.modal-dialog .modal-footer > button.btn
+{
+  margin-left:15px;
+}
+
+
+.position_top {
+  z-index: 9999;
+}
+
+.message
+{
+  display:flex;
+}
+
+@media (min-width: 576px){
+
+  .modal-dialog{
+    margin-top:10%;
+    max-width:85%;
+  }
+}

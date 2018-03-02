@@ -1,0 +1,167 @@
+/*-----common var palette 调色板--------*/
+
+@Rbui-main-light-color:#71BBF5;//主颜色更浅
+@Rbui-main-color:#3692D9;//主颜色浅
+@Rbui-main-deep-color:#0065B3;//主颜色
+@Rbui-main-deeper-color:#225b68;//主颜色深
+@Rbui-main-deepest-color:#004274;//主颜色最深
+@Rbui-deepcolor:#34495E;//深度蓝黑色，对应menu和header上用的
+@Rbui-revise-color:#eb9532;//反色为橙色
+
+@Rbui-gray-class0:#f9f9f9;//灰度最浅
+@Rbui-gray-class1:#f2f2f2;//灰度极浅
+@Rbui-gray-class2:#ebebeb;//灰度非常浅
+@Rbui-gray-class3:#cbcbcb;//灰度更浅
+@Rbui-gray-class4:#999999;//灰度稍浅
+@Rbui-gray-class5:#808080;//灰度gray
+@Rbui-gray-class6:#666666;//灰度稍深
+@Rbui-gray-class7:#333333;//灰度最深
+
+/*------button style---*/
+@Rbui-button-color:#3692D9;
+@Rbui-button-hover-color:#3692d9;
+@Rbui-button-active-color:#0065b3;
+@Rbui-button-disable-color:#999999;
+
+/*------Table style-----*/
+@Rbui-table-sort-color:#3692d9;
+@Rbui-table-td-hover-color:#0065b3;
+@Rbui-pagenation-color:#3692D9;
+
+/*------Tab style-------*/
+@Rbui-tab-underline-color:#3692D9;
+
+
+/*------Panel style---*/
+@Rbui-Panel-headerbgcolor:#71bbf5;
+
+/*------Datetimepicker---------*/
+@Rbui-datepicker-color:#3692D9;
+
+
+/*------Global------*/
+html{font-size: 14px}
+body{overflow-x:hidden!important;background-color:#f2f2f2;font-family:"PingFang SC", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "微软雅黑",sans-serif}
+h3.pagename{color:@Rbui-revise-color;font-size: 18px;margin-bottom: 0}
+button, input, optgroup, select, textarea{font-family: inherit}
+
+
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar
+{
+        width: 8px;
+        height: 8px;
+        background-color: #F5F5F5;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track
+{
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        border-radius: 10px;
+        background-color: #F5F5F5;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb
+{
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+        background-color: #555;
+}
+
+/* display block/none/flex/inline-block/inline*/
+.disBlock{display:block}
+.disNone{display: none}
+.disFlex{display:flex}
+.disInline{display:inline}
+.disInlineblock{display:inline-block}
+
+.textRight{text-align: right}
+.textLeft{text-align: left}
+
+.padding0{padding:0}
+.paddingRight0{padding-right:0}
+.paddingLeft0{padding-left:0}
+.paddingTop0{padding-top: 0}
+.paddingBottom{padding-bottom: 0}
+
+.uppercase {text-transform: uppercase;}
+
+@import url("../../common/icon.less");
+@import url("../../common/pagefooter.less");
+
+/* basic */
+
+@import url("../../common/Button.less");
+@import url("../../common/Text.less");
+@import url("../../common/Input.less");
+@import url("../../common/Textarea.less");
+@import url("../../common/Select.less");
+@import url("../../common/Smartpanelgrid.less");
+@import url("../../common/Radio.less");
+@import url("../../common/CheckBox.less");
+@import url("../../common/MenuBar.less");
+@import url("../../common/Switch.less");
+@import url("../../common/Tab.less");
+@import url("../../common/Wizard.less");
+@import url("../../common/Panel.less");
+@import url("../../common/Dialog.less");
+@import url("../../common/Confirmdialog.less");
+@import url("../../common/Cell.less");
+@import url("../../common/DataTable.less");
+@import url("../../common/DateTimePicker.less");
+@import url("../../common/Pagination.less");
+@import url("../../common/Label.less");
+@import url("../../common/Spinner.less");
+@import url("../../common/Card.less");
+@import url("../../common/FileUpload.less");
+
+/* advanced */
+@import url("../../common/SplitButton.less");
+
+
+/*--------global style
+@import url("../common/Spinner.less");
+@import url("../common/Currency.less");
+@import url("../common/Tab.less");
+@import url("../common/Label.less");
+@import url("../common/TreeTable.less");
+@import url("../common/DataGrid.less");
+@import url("../common/DataTable.less");
+@import url("../common/Wizard.less");
+@import url("../common/DropZone.less");
+@import url("../common/Code.less");
+@import url("../common/LeftNav.less");
+@import url("../common/Rating.less");
+@import url("../common/TimeLine.less");
+@import url("../common/Mindmap.less");
+@import url("../common/BreadCrumb.less");
+@import url("../common/Percent.less");
+@import url("../common/Tree.less");
+@import url("../common/Twotext.less");
+@import url("../common/Signature.less");
+@import url("../common/FloatMenu.less");
+@import url("../common/Colorpicker.less");
+@import url("../common/Slider.less");
+@import url("../common/FullCalendar.less");
+@import url("../common/PickList.less");
+@import url("../common/Carousel.less");
+@import url("../common/daterangepicker.less");
+@import url("../common/Box.less");
+@import url("../common/Card.less");
+@import url("../common/Advertisement.less");
+----*/
+
+
+.panel-default > .panel-heading{
+  color: #666;
+  background: #F0EEE3
+}
+
+
+.search-group > .dropdown-menu-right
+{
+  left:0;
+}

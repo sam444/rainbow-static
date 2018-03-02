@@ -1,0 +1,12 @@
+{
+  "name": "rainbow-foundation-static",
+  "version": "2.1.1",
+  "description": "New ui framework for java web project.",
+  "scripts": {
+    "less": "lessc ./src/ui/theme/default/index.less ./dist/rainbow/ui/2.1.1/core.css"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "less": "^2.7.2"
+  }
+}

@@ -1,0 +1,57 @@
+.btn,
+button.disabled {
+  height:28px;
+  overflow: hidden;
+  color:white;
+  line-height:28px;
+  padding:0 15px;
+  font-size:14px;
+  border: none;
+  border-radius: 28px;
+  min-width:100px;
+  cursor: pointer;
+}
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus,
+button.disabled:focus,
+button.disabled:active:focus,
+button.disabled.active:focus,
+button.disabled:active.focus,
+button.disabled.active.focus
+{
+  outline: none;
+  box-shadow: none;
+  -webkit-shadow:none;
+}
+
+.btn-default{
+  background-color:white;
+  border:solid 1px @Rbui-gray-class4;
+  color:@Rbui-gray-class7;
+}
+
+.btn-primary
+{
+  background-color:@Rbui-main-color;
+}
+
+button.disabled
+{
+  background-color:@Rbui-gray-class3;
+  color:@Rbui-gray-class1;
+  cursor: not-allowed;
+}
+a:link,
+a:visited,
+a:hover,
+a:active
+{
+  color:@Rbui-main-color;
+  text-decoration: none;
+}
+.btn-primary{color:#fff}
+.btn-primary.disabled, .btn-primary:disabled{color:@Rbui-gray-class3}

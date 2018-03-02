@@ -1,0 +1,56 @@
+/* TreeTable Component Style CSS */
+table.treetable {
+	/*border-radius: 10px;
+	border: 1px solid #eeeeee;
+	box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);*/
+	box-shadow: none;
+	border:0;
+	border-bottom:solid 2px #aaa;
+}
+
+table.treetable thead tr th {
+	height: 30px;
+	font-size: 14px;
+	font-weight: bold;
+	/*border-left: 0px;
+	border-right: 0px;*/
+}
+
+table.treetable tbody tr td {
+	font-size: 14px;
+	border-bottom: 1px solid #ddddd;
+}
+
+
+table.treetable thead{
+	background-image: none;
+	background-color: white;
+}
+
+table.treetable thead tr th{
+	border:none;
+	padding:10px 15px;
+	color:#333;
+	border-bottom:solid 2px #aaa;
+	}
+
+table.treetable span{
+	padding-left:0;
+}
+
+table.treetable tr.branch
+{
+	background-color:#fff;
+
+	border-bottom:solid 1px #ebebeb;
+}
+
+
+table.treetable  tr:hover{
+	background-color:@Rbui-table-td-hover-color;
+}
+
+tr.expanded > td
+{
+	height:42px;
+}

@@ -1,0 +1,43 @@
+.blank-style
+{
+	display:none
+}
+
+.smartHorizontal > .row > div
+{
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-right:0;
+}
+
+.col-form-label
+{
+    padding:0;
+    margin:0;
+    line-height:36px;
+	height: 36px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+.col-sm-0 + div,
+.col-md-0 + div,
+.col-lg-0 + div,
+.col-form-label + div
+{
+padding-left:0;
+}
+
+.col-lg-3 > div > div > div.row > .col-lg-6:nth-child(1),
+.col-lg-6 > div > div > div.row > .col-lg-6:nth-child(1),
+.col-lg-4 > div > div > div.row > .col-lg-6:nth-child(1)
+{padding-left:0}
+.col-lg-3 > div > div > div.row > .col-lg-6:nth-child(2),
+.col-lg-6 > div > div > div.row > .col-lg-6:nth-child(2),
+.col-lg-4 > div > div > div.row > .col-lg-6:nth-child(2)
+{padding-right:0}
+
+.smartvertical .smartvertical > .row > div:nth-of-type(1){padding-right:7px!important}
+.smartvertical .smartvertical > .row > div:nth-of-type(2){padding-left:8px!important}

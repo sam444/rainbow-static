@@ -1,0 +1,202 @@
+::-webkit-input-placeholder{color: #cbcbcb!important; }
+:-moz-placeholder{color: #cbcbcb!important;}
+:-ms-input-placeholder{color: #cbcbcb!important; }
+input::-ms-clear,input::-ms-reveal{
+display:none;
+}
+.form-control
+{
+    font-size: 14px;
+    height:36px;
+    color:#333;
+    border:none;
+}
+
+.input-group,
+{
+
+    border:solid 2px #E1E8EE;
+    border-radius:6px;
+}
+
+.input-group-addon
+{
+    padding:0;
+    width:32px;
+    border:none;
+    background-color:transparent;
+    line-height: 32px;
+}
+
+.input-group .form-control,
+.input-group-addon,
+.input-group-btn
+{
+    border:none;
+    height:32px;
+    padding-left:10px;
+}
+
+.form-group > div >.form-control
+{
+	border:solid 2px #E1E8EE;
+}
+
+
+.form-group > div > input[type="password"].form-control
+{
+	height:36px;
+	box-sizing:border-box;
+}
+
+
+.form-group > div > input[type="email"].form-control
+{
+	height:32px;
+	box-sizing:border-box;
+}
+
+.form-group > div > .form-control
+{
+    border-radius: 6px;
+}
+
+
+.form-group > div > .form-control:focus,
+.input-group:focus
+{
+    border:solid 2px #3998fc;
+}
+
+.focusborder{
+    border:solid 2px #3998fc;
+}
+.form-control:focus{
+    box-shadow: 0px 0px 0px white;
+}
+
+/* change validation Style start */
+.has-error i.glyphicon-remove,
+.has-success i.glyphicon-ok
+{
+    display:none!important;
+}
+.has-error > div > .form-control{
+  border:2px solid #d9534f;
+}
+.has-error small
+{
+  color:#d9534f;
+}
+
+.has-success .input-group-addon{
+  color:inherit;
+  border-color:inherit;
+  background-color: inherit;
+}
+
+.has-error > div > .input-group
+{
+    border:2px solid #d9534f;
+}
+
+.has-error > div > .focusborder
+{border:2px solid #3998fc}
+/* change validation Style end */
+
+
+
+.line-horizontal
+{
+    margin-bottom:15px!important;
+}
+
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill
+{
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+    -webkit-text-fill-color: #333;
+}
+
+.input-popover{
+    display:none;
+    border:solid 2px #409af9;
+    width:calc(~"100% - 30px");
+    z-index: 999;
+    position: absolute;
+    margin-top:10px;
+    background-color:#fff;
+    border-radius: 4px;
+    }
+    .input-popover:before
+    {
+    width:0; 
+    height:0; 
+    content: "";
+    top:-8px;
+    left:15px;
+    position: absolute;
+    border-left:8px solid transparent;
+    border-right:8px solid transparent;
+    border-bottom:8px solid #409af9;
+    
+    }
+    .input-popover:after
+    {
+    width:0; 
+    height:0; 
+    content: "";
+    top:-6px;
+    left:15px;
+    position: absolute;
+    border-left:8px solid transparent;
+    border-right:8px solid transparent;
+    border-bottom:8px solid #fff;
+    
+    }
+    .input-popover > span:first-of-type{
+    position: absolute;
+    right:0px;
+    z-index: 99;
+    padding:4px 10px;
+    background-color: #419af9;
+    color:white;
+    cursor: pointer;
+    }
+
+.line-horizontal{margin-top: 28px;}
+
+
+.outputClass > div .disBlock{display:inline-block}
+.outputClass > div .percentcover{display: inline}
+
+
+
+/* when layout = horizontal */
+.line-horizontal{margin:0!important}
+.line-horizontal .form-control{margin-left:0}
+.line-horizontal > .col-form-label{
+    height:auto;
+    line-height: 16px;
+    display: flex;
+
+    white-space: inherit;
+}
+.line-horizontal > .col-form-label > span{
+    align-self: center;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.input-group > .input-group-addon > span{
+    display: block;
+    line-height: 32px;
+}
+.input-group>.custom-select:not(:first-child), .input-group>.form-control:not(:first-child) {
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+}

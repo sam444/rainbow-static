@@ -1,0 +1,47 @@
+.clear-rating[title='Clear']
+{
+	display: none;
+}
+
+
+.rating-container
+{
+	font-size: 20px;
+}
+.rating-container .rating-stars
+{
+	color:@Rbui-rating-color;
+	font-size:20px;
+}
+
+
+.rating-disabled .rating-stars
+{
+	filter:alpha(opacity=50);  
+	-moz-opacity:0.5;  
+	-khtml-opacity:0.5;  
+	opacity:0.5;  
+}
+
+.rating-fa {
+}
+
+.rating-fa .rating-stars:before {
+
+
+	text-shadow:none;
+}
+
+.star-rating .caption, .star-rating-rtl .caption
+{
+	font-size:14px;
+	padding:0;
+	padding-left:15px;
+}
+
+
+.star-rating .caption  > span.label, .star-rating-rtl .caption > span.label
+{
+	padding:3px 10px;
+	font-weight: normal;
+}

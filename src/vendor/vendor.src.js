@@ -1,0 +1,21 @@
+<script src="http://rainbow.ebaotech.com/static/jquery/3.1.1/jquery.min.js"></script>//
+  <script src="http://rainbow.ebaotech.com/static/react/15.4.2/react.min.js"></script>
+  <script src="http://rainbow.ebaotech.com/static/react/15.4.2/react-dom.min.js"></script>
+  <script src="http://rainbow.ebaotech.com/static/tether/1.4.0/tether.min.js"></script>
+  <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+  <script src="http://rainbow.ebaotech.com/static/bootstrap/4.0.0/bootstrap.min.js"></script>
+  <script src="http://rainbow.ebaotech.com/static/moment/2.12.0/moment.min.js"></script>
+  <script src="http://rainbow.ebaotech.com/static/moment/2.12.0/locale/zh-cn.js"></script>
+  <script src="http://rainbow.ebaotech.com/static/rainbow/assitant/eonasdan-bootstrap-datetimepicker/src/js/bootstrap-datetimepicker.js"></script>
+  <script src="http://rainbow.ebaotech.com/static/rainbow/assitant/bootstrap-switch/dist/js/bootstrap-switch.js"></script>
+  <script src="http://rainbow.ebaotech.com/static/rainbow/assitant/select2/dist/js/select2.js"></script>
+  <script src="http://rainbow.ebaotech.com/static/rainbow/assitant/select2/dist/js/select2.full.js"></script>
+  <script src="http://rainbow.ebaotech.com/static/rainbow/assitant/jquery-inputmask/dist/inputmask/inputmask.js"></script>
+  <script src="http://rainbow.ebaotech.com/static/rainbow/assitant/jquery-inputmask/dist/inputmask/jquery.inputmask.js"></script>
+  <script src="http://rainbow.ebaotech.com/static/rainbow/assitant/jquery-file-download/src/Scripts/jquery.fileDownload.js"></script>
+  <script src="http://rainbow.ebaotech.com/static/rainbow/assitant/toastr/toastr.min.js"></script>
+  <script src="http://rainbow.ebaotech.com/static/rainbow/assitant/openvalidator/dist/js/bootstrapValidator.min.js"></script>
+  <script src="http://cdn.bootcss.com/dropzone/4.3.0/min/dropzone.min.js"></script>
+  <script src="https://cdn.bootcss.com/lodash.js/4.17.4/lodash.core.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap-table/1.11.1/bootstrap-table.min.js"></script>
+  

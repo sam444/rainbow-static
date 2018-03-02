@@ -1,0 +1,1060 @@
+/*
+Layout
+Card
+Input
+Select
+Radio
+Checkbox
+Common
+*/
+body{
+    background-color: #eff3f9;
+}
+
+/*navbar*/
+/*禁用nav里的标题文字*/
+.navbar>.navbar-collapse>.nav-menu-bar>div>h3{
+    display: none;
+}
+/*ri的nav图片*/
+.headmenu_logo > img {
+    width: 112px;
+    margin-top: 15px;
+}
+/*headmenu*/
+nav.bg-primary {
+    background-color: #0668cc !important;
+    height: 50px;
+}
+
+ /* 水平布局行高 */
+ .line-horizontal{padding:8px 0}
+ .card-header  .line-horizontal{padding:0}
+ /* 水平布局当Label哲行时的高度 */
+.line-horizontal > .col-form-label > span{
+    line-height:16px;
+}
+
+/* 所有card统一样式 */
+    /*card-header*/
+.card-header > div {/* 正向card-header*/
+    flex-direction: row!important;
+    justify-content: flex-start!important;
+}
+.cardHeaderFunction>h4>span>a{/*.card-title > >span >a*/
+    margin-right: 0;
+}
+.cardHeaderContentFunction{
+    display: flex;
+    flex-direction:row-reverse;
+	flex-grow:1;
+	justify-content:flex-end;
+}
+.cardFunction > a {
+    margin-left: 6px;
+    margin-right: 16px;
+}
+.cardContentFunction>span>span>div{/*cardheader中的checkbox向左浮动*/
+    float: left;
+}
+    /*card背景边框*/
+.card{
+    border:0 solid #ffffff;
+}
+/* .nav-tabs, .tab-content{
+    background-color: #eff3f9;
+} */
+.tab-pane{
+    /* background-color: #fff; */
+    /* background-color: #eff3f9; */
+    margin: 24px;/*tab左边距*/
+    margin-top: 0;
+    padding: 0;
+}
+    /*card-header小三角位置改变*/
+.cardFunction > a {
+    margin-left: 6px;
+    margin-right: 6px;
+}
+.card:before{
+    content:"";
+    height:42px;
+    width:4px;
+    background-color:#fe6974;
+    position:absolute;
+    border-top-left-radius: 0.18rem;
+}
+/*header中更改下拉down图标样式*/
+.cardFunction .glyphicon-chevron-down:before {
+    content:"\E253";
+    color:#ccc;
+    font-size:12px;
+    line-height:24px;
+}
+.cardFunction .glyphicon-chevron-down:hover::before,.glyphicon-chevron-down:focus::before{
+    content:"\E252";
+    color:#999999;
+}
+    /*card容器的边距*/
+.card-container{
+    padding:24px;/*card左边距*/
+    padding-top: 5px;
+}
+    /*card下的底部距离*/
+.card-container>div{
+    margin-bottom: 20px!important;
+}
+.card-header h4{
+    padding: 0;
+    min-width: 50px;
+}
+.card-header h4:before{
+    font-family: 'Glyphicons Halflings';
+    font-size:14px;
+    background-color:#fe6974;
+    color:white;
+    transform: scale(1);
+    position: relative;
+    top: 2.5px;
+    padding:0 3.5px;
+    width:22px;
+    height:22px;
+    line-height: 22px;
+    border-radius: 50%;
+    content: "\E032";
+    margin-right: 6px;/**/
+    margin-left: 10px;/**/}
+
+.cardFunction > a{
+    padding-left:0px;
+    margin-right:10px;
+}
+
+
+.card-title > span{
+    display:flex;
+}
+.card-title > span > a{
+    margin-right:16px;
+    flex:0 0 auto;
+}
+.card-title > span > div{
+    padding:0!important;
+}
+
+.card-header{
+    padding:6px!important;/*30+6+6=42*/
+}
+.card-block{
+    padding-bottom: 10px;
+}
+    /*更改card中的card*/
+.card > .card-block .card:before{/**/
+    background-color:#ffffff!important;
+}
+.card-block > .card > .card-header h4 {/*card中card的标题头部样式*/
+    font-size: 15px;
+    color: #515866;
+}
+.card > .card-block .card > .card-header h4 > label{
+    font-size: 16px;
+    font-weight: normal;
+    color: #000;
+
+}
+.card > .card-block .card > .card-header h4:before{
+    color: #fc513d;
+    font-size: 18px;
+    background-color: #ffffff;
+    margin-right: 16px;
+}
+.card > .card-block .card > .card-header > div{
+    border-bottom:solid 1px #cccccc;
+}
+
+/*card中同时存在radio和checkbox*/
+.cardContentFunction{
+    width: 70%!important;
+}
+
+/*表单模块*/
+.tddefault > .form-group{/*table高度40*/
+    min-height: 40px;
+    /* line-height: 40px; */
+}
+.dttable>tbody>tr:nth-child(even){
+    background-color: #f4faff;
+}
+.dttable>tbody>tr>td{
+    padding:0 5px;
+}
+.dttable>tbody>tr>td>.line-horizontal{
+    padding:9px 0;
+}
+
+
+/*字体样式*/
+.card-header .r-label>label,.card-header h4,.card-title .icon_end{  /*标题样式*/
+    font-size: 15px;
+    color: #515866;
+    font-weight: bold;
+    line-height: 30px;
+    white-space:nowrap;
+}
+.form-group>label>span{
+    font-size: 14px;
+    color: #22272B;
+}
+.card-header .checkbox>label{
+    font-size: 12px;
+}
+.card-header .radio>label{
+    font-size: 12px;
+}
+
+/*button样式*/
+.buttonbar .btn{
+    height:36px;
+    min-width: 120px;
+    border-radius: 2px;
+}
+.btn{
+    font-size: 12px;
+}
+.btn, button.disabled{
+    font-size: 12px;
+}
+/*多彩按钮*/
+.btn-default{
+    border: solid 1px #2abcdb;
+    color: #ffffff;
+}
+.buttonbar .btn-primary,
+.buttonbar .btn-info,
+.buttonbar .btn-default{
+    background-color: #2abcdb;
+}
+.buttonbar .btn-success{
+    background-color: #28cf9a;
+}
+.buttonbar .btn-warning{
+    background-color: #f79040;
+}
+.buttonbar .btn-danger{
+    background-color: #fa6b76;
+}
+.btn-primary.disabled,
+.btn-info.disabled,
+.btn-default.disabled,
+.buttonbar .btn-primary:hover,
+.buttonbar .btn-primary:active,
+.buttonbar .btn-info:hover,
+.buttonbar .btn-info:active,
+.buttonbar .btn-default:hover,
+.buttonbar .btn-default:active{
+    color: #ffffff;
+    background-color: #2393bb;
+}
+.btn-success.disabled,
+.buttonbar .btn-success:hover,
+.buttonbar .btn-success:active{
+    color: #ffffff;
+    background-color: #20a77d;
+}
+.btn-warning.disabled,
+.buttonbar .btn-warning:hover,
+.buttonbar .btn-warning:active{
+    color: #ffffff;
+    background-color: #cf7834;
+}
+.btn-danger.disabled,
+.buttonbar .btn-danger:hover,
+.buttonbar .btn-danger:active{
+    color: #ffffff;
+    background-color: #bf505a;
+}
+
+/*不同尺寸按钮*/
+    /*按钮组*/
+.card > .card-block  .btn{
+    min-width: 100px;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 0;
+    border: 1px solid #0668cc;
+    color: #ffffff;
+    background-color: #0668cc;
+}
+.card > .card-block  boxPadding > span{/*间距*/
+    padding-right: 30px;
+}
+.card > .card-block  .btn > span{
+    margin-left: 0px !important;
+}
+.card > .card-block  .btn-default{
+    color: #0668cc;
+    background-color: #ffffff;
+    border:1px solid #0668cc;
+}
+.card > .card-block  .btn-default:hover,
+.card > .card-block  .btn-default:active{
+    color: #ffffff;
+    background-color: #0668cc;
+}
+/*输入框旁的按钮垂直居中*/
+.card > .card-block .smartvertical .row .smartvertical .row .btn{
+    position: absolute;
+    top: 50%;
+    margin-top: -12px;
+}
+
+/*弹出框按钮 */
+
+.modal-dialog > .modal-content > .modal-body  .btn{
+    min-width: 100px;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 0;
+    border: 1px solid #0668cc;
+    color: #ffffff;
+    background-color: #0668cc;
+}
+.modal-dialog > .modal-content > .modal-body  boxPadding > span{
+    padding-right: 30px;
+}
+.modal-dialog > .modal-content > .modal-body  .btn > span{
+    margin-left: 0px !important;
+} 
+.modal-dialog > .modal-content > .modal-body  .btn-default{
+    color: #0668cc;
+    background-color: #ffffff;
+    border:1px solid #0668cc;
+}
+.modal-dialog > .modal-content > .modal-body  .btn-default:hover,
+.modal-dialog > .modal-content > .modal-body  .btn-default:active{
+    color: #ffffff;
+    background-color: #0668cc;
+}
+/*下拉的普通按钮*/
+.card > .card-block .boxPadding> .btn-group > .btn,
+.card > .card-block .boxPadding> .btn-group > .btn + .btn-group > .btn{
+    min-width: 100px;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 0;
+    border: 1px solid #0668cc;
+    color: #ffffff;
+    background-color: #0668cc;
+}
+.card > .card-block .boxPadding> .btn-group > .btn + .btn-group > .btn{
+    min-width: 10px;
+    padding: 0 10px;
+}
+    /*单个输入框查询*/
+/* .smartvertical .btn{
+    min-width: 70px!important;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 0;
+    color: #ffffff;
+    background-color: #0668cc;
+    padding-left: 0;
+    padding-right: 0;
+}
+.smartvertical .btn>span{
+    margin-left: 0!important;
+} */
+/*单个输入框查询右边按钮*/
+/* .smartvertical .btn{
+    min-width: 70px!important;
+    margin: 10px;
+} */
+
+
+/* table 样式 */
+/* UIRating style in Table */
+table .rating-container{font-size:14px;}
+table .rating-disabled{cursor: auto}
+
+
+/* 输入框样式*/
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.radio,.checkbox{
+    height:auto;
+    min-height:auto;
+    line-height: 28px;
+ }
+.form-group>label>[id$=helpText]{/*帮助问号样式*/
+    color: #0668cc!important;
+}
+.form-group>label>[class$="asterisk"]{
+    padding-left: 1px!important;
+    color: #fe3824!important;
+    position: relative;
+    top: -2px;
+}  
+.card>.card-block>div>.smartvertical>.row>.col-sm-8>.form-group>.col-sm-2,
+.card>.card-block>div:nth-child(2)>.smartvertical>.row>.col-sm-8>.form-group>.col-sm-2,
+.card>.card-block>div>.smartvertical>.row>.col-sm-12>.form-group>.col-sm-2,
+.card>.card-block>div:nth-child(2)>.smartvertical>.row>.col-sm-12>.form-group>.col-sm-2{ /*横跨两列的输入框对齐*/
+    min-width: calc((100% - 30px)/6) !important;
+    flex: calc((100% - 30px)/6) !important;
+}
+.card>.card-block>div>.smartvertical>.row>.col-sm-8>.form-group>.col-sm-10,
+.card>.card-block>div:nth-child(2)>.smartvertical>.row>.col-sm-8>.form-group>.col-sm-10,
+.card>.card-block>div>.smartvertical>.row>.col-sm-12>.form-group>.col-sm-10,
+.card>.card-block>div:nth-child(2)>.smartvertical>.row>.col-sm-12>.form-group>.col-sm-10{
+    min-width: calc(100% - (100% - 30px)/6) !important;
+    flex: calc(100% - (100% - 30px)/6) !important;
+}
+
+.card>.card-block>div>.smartvertical>.row>.col-sm-12>.form-group>.col-sm-1,
+.card>.card-block>div:nth-child(2)>.smartvertical>.row>.col-sm-12>.form-group>.col-sm-1{/*横跨三列的输入框对齐*/
+    min-width: calc((100% - 45px)/9) !important;
+    flex: calc((100% - 45px)/9) !important;
+}
+.card>.card-block>div>.smartvertical>.row>.col-sm-12>.form-group>.col-sm-11,
+.card>.card-block>div:nth-child(2)>.smartvertical>.row>.col-sm-12>.form-group>.col-sm-11{
+    min-width: calc(100% - (100% - 45px)/9) !important;
+    flex: calc(100% - (100% - 45px)/9) !important;
+}
+/*默认！！*/
+.input-group > .input-group-addon > span{
+    line-height:26px;
+}
+.form-group > div > .input-group{/*左右框*/
+    background-color: #ffffff;
+    border:1px solid #cccccc;
+    border-radius: 2px;
+    height: 28px;
+    /* overflow: hidden; */
+}
+.form-group > div > .input-group input{/*左右框的左框透明*/
+    background-color: transparent;
+    height: 26px;
+}
+.form-group > div > .input-group  .input-group-addon{/*左右框的右框*/
+    background-color: transparent;
+    height: 26px;
+    width: 26px;
+}
+.form-group > div > .input-group  .input-group-addon > span.glyphicon {/*左右框中右kuang中的内容*/
+    color: #0668cc;
+    margin: 0 auto;
+}
+.form-group > div > .input-group:hover  .input-group-addon > span.glyphicon{/*左右框中右kuang中的内容hover*//*hover，active样式*/
+    color: #470202;
+    cursor: pointer;
+}
+.form-group > div > .input-group >.dateRangeTimeGroup > div:last-child{
+    padding: 0!important;
+ }
+.form-group > div > .input-group > .input-group-addon > span.glyphicon,
+.form-group > div > .dateTime > .input-group-addon > span.glyphicon,
+.form-group > div > .input-group >.dateRangeTimeGroup > div:last-child >  .input-group-addon > span.glyphicon{/*左右框中右框中的内容*/
+    line-height: 26px;
+    width: 26px!important;
+    height: 26px!important; 
+    text-align: center;
+}
+.form-group > div > .input-group > .input-group-addon > span.glyphicon::before,
+.form-group > div > .dateTime > .input-group-addon > span.glyphicon::before,
+.form-group > div > .input-group >.dateRangeTimeGroup > div:last-child > .input-group-addon > span.glyphicon::before{
+    font-size: 17px;/*icon 20*20*/
+    /* line-height: 24px;右边icon居中 */ 
+}
+.form-group > div > .input-group > .input-group-addon > span.glyphicon-chevron-down::before,/*下拉icon*/
+.form-group > div > .input-group >.dateRangeTimeGroup > div:last-child > .input-group-addon > span.glyphicon-chevron-down::before{
+    font-size: 12px;
+}
+/*li 下拉*/
+.form-group > div > .focusborder > .input-group-addon > span.glyphicon-chevron-down{/*下拉icon旋转*/
+    transform: rotate(180deg);
+}
+.input-group-addon{
+    font-size: 12px;
+}
+.form-group > div > .form-control{/*基本框*/
+    background-color: #ffffff;
+    border:1px solid #cccccc;
+    border-radius: 2px;
+    height: 28px;
+}
+.form-group > div > .select2-container--default .select2-selection--single{/*一个多选框*/
+    background-color: #ffffff;
+    border:1px solid #cccccc;
+    border-radius: 2px;
+    height: 28px;
+}
+.form-group > div > .select2-container--default .select2-selection--multiple{/*多个多选框*/
+    background-color: #ffffff;
+    border:1px solid #cccccc;
+    border-radius: 2px;
+    /* height: 28px; */
+    min-height: 28px;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered, 
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 28px;
+    line-height: 28px;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    line-height: 26px;
+}
+.select2-container--default .select2-selection--multiple .select2-search input{
+    line-height: 26px;
+}
+
+/*必填*/
+.form-group > .input-required > .input-group{/*左右框*/
+    background-color: #ecf4ff;
+    border:1px solid #a4c4e5;
+}
+.form-group > .input-required > .input-group input{/*左右框的左框透明*/
+    background-color: transparent;
+}
+.form-group > .input-required > .form-control{/*基本框*/
+    background-color: #ecf4ff;
+    border:1px solid #a4c4e5;
+}
+.form-group > .input-required > .select2-container--default .select2-selection--single{/*一个多选框*/
+    background-color: #ecf4ff;
+    border:1px solid #a4c4e5;
+}
+.form-group > .input-required > .select2-container--default .select2-selection--multiple{/*多个多选框*/
+    background-color: #ecf4ff;
+    border:1px solid #a4c4e5;
+}
+
+
+/*禁用*/
+.form-group > div > .input-group input[disabled]{/*左右框左*/
+    background-color: #f6f6f6;
+}
+.form-group > div > .input-group input[disabled] ~ span{/*左右框右*/
+    background-color: #f6f6f6;
+}
+.form-group > div > .form-control[disabled]{/*基本框*/
+    background-color: #f6f6f6;
+}
+.form-group > div > .select2-container--disabled .select2-selection--single{/*一个多选框*/
+    background-color: #f6f6f6;
+}
+.form-group > div > .select2-container--disabled .select2-selection--multiple{/*多个多选框*/
+    background-color: #f6f6f6;
+}
+.jedate-disabled{/*datatimepicker*/
+    background-color: #f6f6f6!important;
+}
+.form-group > div > .input-group input[disabled] ~ span > span:before{/*左右框右*/
+    color: #999999;
+    cursor: not-allowed;
+}
+.jedate-disabled > .input-group-addon > span:before{/*日期控件*/
+    color: #999999;
+    cursor: not-allowed;
+}
+
+/*移入移出onfocus*/
+.form-control:focus{
+    box-shadow: 0px 0px 0px white;
+}
+.form-group > div > .form-control:focus,
+.form-group > div > span> .form-control:focus{/*基本框*/
+    border:solid 1px #fff9ce;
+    background-color:#fff9ce;
+}
+.form-group > div > .focusborder{/*左右框*/
+    border:solid 1px #fff9ce!important;
+    background-color:#fff9ce!important;
+}
+.focusborder > .dateRangeTimeGroup > div >.form-group > div > .input-group,
+.focusborder > .dateRangeTimeGroup > div >.form-group > div > .input-group > .jeinpbox > input{/*datatimepicker*/
+    background-color:#fff9ce;
+}
+.focusborder > .dateRangeTimeGroup > div:last-child > .input-group-addon > span:before,/*datatimepicker*/
+.focusborder > .input-group-addon > span.glyphicon:before{/*普通图标*/
+    color: #470202;
+}
+
+
+/*error*/
+.has-error > .input-required > .input-group {/*左右框左*/
+    background-color: rgba(254, 56, 36, 0.1);
+    border: 1px solid #fe3824;
+}
+.has-error > .input-required > .form-control{/*基本框*/
+    background-color: rgba(254, 56, 36, 0.1);
+    border: 1px solid #fe3824;
+}
+.has-error > .input-required > .select2-container--default .select2-selection--single{/*一个多选框*/
+    background-color: rgba(254, 56, 36, 0.1);
+    border: 1px solid #fe3824;
+}
+.has-error > .input-required > .select2-container--default .select2-selection--multiple{/*多个多选框*/
+    background-color: rgba(254, 56, 36, 0.1);
+    border: 1px solid #fe3824;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////**/
+/*时间范围控件*/
+.dateRangeTimeGroup > .startDate > .line-horizontal,
+ .dateRangeTimeGroup > .endDate > .line-horizontal{
+	 padding: 0;
+}
+.dateRangeTimeGroup > .startDate > .inputClass > div > div.jedate,
+.dateRangeTimeGroup > .endDate > .inputClass > div > div.jedate{
+     border:0;
+     height: 26px;
+}
+.dateRangeTimeGroup > div:nth-child(2){
+	padding-top:4px!important;
+}
+.input-append.date .add-on i, .input-prepend.date .add-on i, .input-group.date .input-group-addon span/*datatimepicker高度*/
+{
+	line-height: 26px;
+}
+.dateRangeTime > .dateRangeTimeGroup > div:last-child{
+    width: 26px!important;
+}
+
+/*下拉框样式*/
+.select2-results__option {
+    padding: 5px 0 5px 14px;
+    font-size: 14px;
+    /* color: #22272b!important; */
+}
+.select2-results__option[aria-selected]
+{
+	line-height:1rem;
+}
+/*下拉框样式table的*/
+.dropdown-menu > .table > tbody > tr > td:first-child{
+    padding-left:14px; 
+}
+
+
+/* comm css */
+
+
+/* 当每个网格再分出两个内容且后面不为输入框的样子 */
+.smart-3-endother .checkbox > label{margin-right:0}
+.smartvertical .smart-3-endother .smartvertical > .row > div:nth-of-type(1),
+.smartvertical .smart-3-endother .smartvertical > .row > div:nth-of-type(2){padding:0!important}
+
+/* 当每个网格再分出两个内容且后面为输入框的样子 */
+.smart-3-endtext .smartvertical > .row > div:nth-of-type(1){padding:0!important}
+.smart-3-endtext .smartvertical > .row > div:nth-of-type(2){padding:0!important}
+
+
+.icon_end{text-decoration: none!important}
+
+/*两个输入框占同一个col时将输入框对齐*/
+.smartvertical .smartvertical > .row > div:nth-of-type(1) {
+    padding-right: 0px !important;
+}
+.smartvertical .smartvertical > .row > div:nth-of-type(2) {
+    padding-left: 0px !important; 
+}
+/*输入框内文字的间隔*/
+.input-group input.form-control, .input-group-addon, .input-group-btn {
+    padding-left: 10px;
+}
+.input-group span.form-control, .input-group-addon, .input-group-btn {
+    padding-left: 0; 
+}
+
+/*switch开关(多层遍历)*/
+/*
+.bootstrap-switch{
+    border-radius: 10px;
+    width: 54px!important;
+}
+.bootstrap-switch > .boootstrap-switch-container{
+    width:78px!important;
+    margin-left: -26px!important;
+}
+.bootstrap-switch-on .bootstrap-switch-container{
+    
+   background-color: #13d199
+}
+.bootstrap-switch-on{
+    border-color: #13d199;
+}
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary{
+    background-color: #13d199
+}
+.bootstrap-switch-label{
+    content: "";
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.bootstrap-switch-off .bootstrap-switch-container{
+    background-color: #f6f6f6
+ }
+ .bootstrap-switch-off{
+    border-color: #f6f6f6;
+}
+.bootstrap-switch .bootstrap-switch-handle-off .bootstrap-switch-default{
+    background-color: #f6f6f6
+}
+*/
+
+/*长备注*/
+.form-group>div>textarea{
+    border-color: #cccccc;
+    background-color: #ffffff;
+    font-size: 14px;
+    line-height: 26px;
+
+}
+.form-group>div>textarea:focus{
+    color: #22272b!important;
+    background-color: #fff9ce!important;
+}
+.form-group > div > textarea + span.textarea-max-msg{/*单行*/
+    position: absolute;
+    color:#cccccc;
+    bottom:0!important;
+    right: 30px;
+}
+.form-group > div > textarea{
+    overflow-y: hidden;
+}
+.form-group > div > textarea[rows] + span.textarea-max-msg{/*多行*/
+    bottom:8px!important;
+}
+.form-control:disabled:focus, .form-control[readonly]:focus{/*长备注禁选*/
+    background-color: #f6f6f6!important;
+    border-color: #ccc!important;
+}
+
+/* check box Radio */
+.checkbox > label,.radio > label{cursor: pointer}
+.demo--label > .demo--checkbox{height:14px;width: 14px;}
+.checkbox-inout:checked + .demo--checkbox:after{height:6px;width:11px;margin-bottom:2px;transform: rotate(130deg)}
+.checkbox-inout:checked + .demo--checkbox{background-color:#13d199}
+.demo--radioInput{height:14px;width:14px;margin-right: 4px;border:1px solid #999999}
+.radio .demo--radio:checked + .demo--radioInput:after{width:16px;height:16px;margin:-1px;border:double 3px #fff;background-color:#13d199}
+.radio>label{
+    color: #666666;
+}
+
+.form-group .radio>label{
+    font-size: 12px;
+}
+.form-group .checkbox>label{
+    font-size: 12px;
+}
+
+/* header中的按钮*/
+   /*基础形状*/
+   .card-header>div>.cardHeaderContentFunction>.cardContentFunction>span>span button>span:before{
+    /*.card-header>div>.cardHeaderFunction>h4>span>button>span:before{*/
+        content: "";
+        width: 8px!important;
+        height: 6px !important;
+        background-color:#ffffff;
+        position:absolute;
+        font-size: 12px;
+        left:-6px;
+        opacity:1;
+        top:0px;
+    }
+    .card-header>div>.cardHeaderContentFunction>.cardContentFunction>span>span button>span:after{
+    /*.card-header>div>.cardHeaderFunction>h4>span>button>span:after{*/
+        content: "";
+        width: 10px;
+        height: 6px;
+        border-radius: 10px 10px 0 0;
+        background-color:#89929b;
+        position: absolute;
+        top: 0px;
+        left: -10px;
+    }
+    .card-header>div>.cardHeaderContentFunction>.cardContentFunction>span>span button{
+    /*.card-header>div>.cardHeaderFunction>h4>span>button{*/
+        background-color: #ffffff;
+        color:#0668cc;
+        border-radius:2px 10px 2px 2px ;
+        height: 28px;
+        margin-top: -13px;
+        box-shadow: 0 2px 6px #e2edf9;
+        overflow: initial;
+        position: absolute;
+        right:15px;
+    }
+        /*基础按钮hover样式*/
+    .card-header>div>.cardHeaderContentFunction>.cardContentFunction>span>span button:hover{  
+    /*.card-header>div>.cardHeaderFunction>h4>span>button:hover {*/
+        color: #4c2526;
+    }
+        /*hightlight样式*/
+    .card-header>div>.cardHeaderContentFunction>.cardContentFunction>span>span .hh_btn>span:before{  /*方块*/
+    /*.card-header>div>.cardHeaderFunction>h4>span>.hh_btn>span:before{  *//*方块*/
+        background-color: #fd6a21;
+        top:-1px;
+    }
+    .card-header>div>.cardHeaderContentFunction>.cardContentFunction>span>span .hh_btn>span:after{ /*圆*/
+    /*.card-header>div>.cardHeaderFunction>h4>span>.hh_btn>span:after{   */ /*圆*/
+        background-color:#2f1802;
+        top: -1px;
+        left: -11px;
+    }
+    .card-header>div>.cardHeaderContentFunction>.cardContentFunction>span>span .hh_btn{
+    /*.card-header>div>.cardHeaderFunction>h4>span>.hh_btn{*/
+        background-color: #fd6a21;
+        color:#ffffff;
+        border-color: #fd6a21;
+        font-size: 10px;
+    }
+        /*hightlight样式的hover样式*/
+    .card-header>div>.cardHeaderContentFunction>.cardContentFunction>span>span .hh_btn:hover{
+    /*.card-header>div>.cardHeaderFunction>h4>span>.hh_btn:hover{*/
+        background-color:#d46929;
+        border-color: #d46929;
+    }
+    .card-header>div>.cardHeaderContentFunction>.cardContentFunction>span>span .hh_btn>span:hover{
+    /*.card-header>div>.cardHeaderFunction>h4>span>.hh_btn>span:hover{*/
+        color:#ffffff!important;
+    }
+    .card-header>div>.cardHeaderContentFunction>.cardContentFunction>span>span .hh_btn:hover>span::before{/*方块*/
+    /*.card-header>div>.cardHeaderFunction>h4>span>.hh_btn:hover>span::before{  *//*方块*/
+        background-color: #d46929;
+    }
+    /*禁选header中的按钮字体大小调整*/
+    .card-header>div>.cardHeaderContentFunction>.cardContentFunction>span>span button{
+        font-size: 12px;
+    }
+    .btn.disabled, .btn:disabled {
+        opacity: 1;
+    }
+    
+
+/*分页器*/
+.paginationRow>.pagination>li a{ 
+    width: 24px;
+    height: 24px;
+    border: 1px solid #d2eaff;
+    font-size: 12px;
+    padding:0;
+    text-align: center;
+
+}
+/*
+.paginationRow>.pagination>li:nth-child(1)>a,
+.paginationRow>.pagination>li:nth-child(2)>a,
+.paginationRow>.pagination>li:nth-last-child(4)>a,
+.paginationRow>.pagination>li:nth-last-child(3)>a{
+    width: 60px;
+
+}
+*/
+.paginationRow>.pagination>li>a:hover{
+
+    border: 1px solid #d2eaff;
+    background-color: #0c84ea;
+    color: #ffffff;
+
+}
+.paginationRow>.pagination>.active>a{
+
+    border: 1px solid #d2eaff!important;
+    background-color: #0c84ea;
+}
+.paginationRow>.pagination>disabled{
+
+    border: 1px solid #d2eaff!important;
+    background-color: #ffffff;
+    color: #0c84ea;
+}
+.paginationRow>.pagination>.pagenumber>div{
+    width: 50px;
+    height: 24px;
+    border-color:#d2eaff;
+    font-size: 12px;
+    color:  #0c84ea;
+}
+.paginationRow>.pagination>.pagenumber>div>select{
+    border: 0;
+    height: 22px;
+    color:  #0c84ea;
+}
+
+/*button bar*/
+.buttonbar{/*通用透明button bar*/
+    width: 100%;
+    height: 60px;
+    background-color:rgba(214,223,234,0.8);
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    line-height: 60px;/*垂直居中*/
+    /* display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    height: auto!important; */
+}
+.buttonbar .boxPadding{
+    line-height: 60px;/*垂直居中*/
+}
+.buttonbar>div:nth-child(2)>div{
+    float: right;
+    margin-top: 0 !important;
+}
+.boxPadding>div>div>.badge>.form-group>label>span{
+    font-size: 12px!important;
+}
+.boxPadding>div>div>.badge>.form-group>label{
+    height: 14px;
+}
+.boxPadding>div>div>.badge>.form-group>div>span{
+    font-size: 16px;
+    color: #22272b;
+}
+.boxPadding>div>div>.badge{
+    margin-left: 30px;
+    margin-top: 12px;
+}
+.boxPadding>div>div:first-child>.badge{
+    margin-left: 0;
+}
+.boxPadding>div>div>.buttonBarSpan{
+    position: relative;
+    top: -10px;
+    left: 10px;
+}
+.boxPadding>div>div:nth-last-child(1)>span>div>div>span{
+    color: #ff7300!important;
+    font-size: 20px!important;
+}
+
+/*popover优化*/
+.tooltip-inner {
+    max-width: 200px;
+    padding: 3px 8px;
+    color: #fff;
+    font-size: 14px;
+    text-align: left;
+    background-color:rgba(0, 0, 0, 0.7);
+    border-radius: 4px;
+}
+
+/* update badge cycle style */
+span.badge
+{
+    font-family: arial;
+    padding: 3px 4px;
+    border-radius: 100%;
+
+}
+.navbar-nav .glyphicon>span.badge
+{
+    border-radius: 100%;
+}
+
+/*tooltip*/
+.tooltip.top .tooltip-arrow{
+    border-top-color: rgba(0, 0, 0, 0.7)!important;/*无法改变颜色*/
+}
+.tooltip.bottom .tooltip-arrow{
+    border-bottom-color: rgba(0, 0, 0, 0.7)!important;
+}
+.tooltip-inner{
+    padding: 20px 25px;
+    font-weight: normal;
+}
+
+/*card*左边竖线消失*/
+.card-before-disappear:before{
+    background-color: #fff!important;
+    height: 0;
+    width: 0;
+}
+
+/*修改顶部tab周边样式*/
+.nav-link:link{
+    color: #22272b;
+}
+.PageContainer > div > .tab-content > .tab-pane{
+    padding-top: 0;
+    border: 0;
+}
+.PageContainer > div >  .nav-tabs {
+    background-color: #eff3f9;
+    border-bottom: 0;
+    padding-top: 0;
+    margin-left: 40px;
+    font-weight: normal;
+}
+.PageContainer > div > .boxPadding{
+    position: absolute;
+    line-height: 33px;
+    right: 50px;
+}
+.PageContainer > div > .boxPadding > a:link
+{
+    color: #22272b;
+}
+.PageContainer > div > .boxPadding > a:hover,
+.PageContainer > div > .boxPadding > a:active{
+    color: #0668cc;
+}
+.PageContainer > div > ul.nav-tabs > li > .nav-link{
+    background-color: #eff3f9;
+}
+.PageContainer > div >  .nav-tabs .nav-item.show .nav-link,
+.PageContainer > div >  .nav-tabs .nav-link.active{
+    color: #0668cc;
+    border-bottom: 0;
+    font-weight: bolder;
+}
+.PageContainer > div >  .nav-tabs > .nav-item > a.active::after{
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: #0668cc;
+    font-size: 12px;
+    opacity: 1;
+    top: 28px;
+}
+.PageContainer > div > ul.nav-tabs > .nav-item > .nav-link{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/*修改card中tab周边样式*/
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    border-bottom: 3px solid #0668cc;
+    color: #0668cc;
+}
+.card > .card-block > div > #tabPlan_content > .tab-pane{
+    padding: 0;
+    border: none; 
+    background-color: #eff3f9;
+}
+/*加号图标, 扩展按钮*/
+.card-block > div > .btn-expand{
+    border: 0!important;
+    padding: 0!important;
+
+}
+.card-block > div > .btn-expand > span{
+    color: #0668cc;
+    font-size: 24px;
+}
+
+/*tab中的card*/
+.tab-pane .card-container{
+    padding: 0!important;
+}
+
+/*修改外围tab颜色*/
+.PageContainer > div > div.tab-content{
+    background-color: #eff3f9; 
+    margin-top: 10px;
+}
+.PageContainer > div > div.tab-contant > div.tab-pane{
+    background-color: #eff3f9;
+}

@@ -1,0 +1,9 @@
+.weui-tabbar__item.weui-bar__item_on .weui-tabbar__icon, .weui-tabbar__item.weui-bar__item_on .weui-tabbar__icon > i, .weui-tabbar__item.weui-bar__item_on .weui-tabbar__label {
+    color: #4D93E4;
+ }
+ .weui-tabbar {
+    position: fixed;
+ }
+ .fa{
+ color: #4D93E4;
+  }
